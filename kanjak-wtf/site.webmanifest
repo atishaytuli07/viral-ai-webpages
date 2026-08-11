@@ -1,0 +1,21 @@
+{
+  "name": "कंजक",
+  "short_name": "कंजक",
+  "description": "Ashtami ki subah, halwa-puri, aur woh ek ladka.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a0e08",
+  "theme_color": "#1a0e08",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
