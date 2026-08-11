@@ -1,8 +1,8 @@
 /* गली क्रिकेट */
 
 Player.init({
-  prev: "../kanjak-wtf/",
-  next: "../chappal-wtf/",
+  prev: "https://kanjak.vercel.app/",
+  next: "https://maakachappal.vercel.app/",
   tracks: [
     {
       // From a film about a kid and a cricket bat, so it lands on this scene

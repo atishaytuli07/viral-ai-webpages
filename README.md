@@ -9,6 +9,10 @@ UI stays out of its way.
 
 ---
 
+**Live:** [kanjak.vercel.app](https://kanjak.vercel.app) · [gullycricket.vercel.app](https://gullycricket.vercel.app) · [maakachappal.vercel.app](https://maakachappal.vercel.app)
+
+---
+
 ## कंजक
 
 Ashtami morning. Eight kanya, one langoor, and the smallest boy in the room
@@ -81,12 +85,23 @@ Then open `http://localhost:8000/kanjak-wtf/`.
 Each folder is a static site. On Vercel, create one project per scene and set
 **Root Directory** to that folder — no build command, no output directory.
 
-> **Before going live:** `og:url`, `og:image` and `canonical` in each
-> `index.html` are absolute and currently point at `kanjak.wtf`,
-> `gullycricket.wtf` and `chappal.wtf`. Change them to whatever domain you
-> land on. They must stay absolute — a relative `og:image` means no preview
-> card on WhatsApp, Twitter or iMessage. Each file has a `DEPLOY:` comment
-> marking the spot.
+Create the projects with these exact names, so the free subdomain matches:
+
+| folder | Vercel project | URL |
+|---|---|---|
+| `kanjak-wtf` | `kanjak` | kanjak.vercel.app |
+| `gully-cricket-wtf` | `gullycricket` | gullycricket.vercel.app |
+| `chappal-wtf` | `maakachappal` | maakachappal.vercel.app |
+
+`og:url`, `og:image`, `canonical` and the links between the three sites are
+absolute and point at those URLs. They have to be: the pages live on separate
+hosts, so a relative `../` hop would 404, and a relative `og:image` means no
+preview card on WhatsApp, Twitter or iMessage. If a URL changes, each
+`index.html` has a `DEPLOY:` comment marking the spot.
+
+Because the links are absolute, clicking between scenes on a local server will
+jump to the live sites. That is expected — serve one folder at a time when
+working offline.
 
 ## Credits
 
