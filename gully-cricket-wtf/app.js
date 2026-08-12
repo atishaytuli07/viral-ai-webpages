@@ -2,7 +2,7 @@
 
 Player.init({
   prev: "https://kanjak.vercel.app/",
-  next: "https://maakachappal.vercel.app/",
+  next: "https://chappal-wtf.vercel.app/",
   tracks: [
     {
       // From a film about a kid and a cricket bat, so it lands on this scene

@@ -84,36 +84,34 @@ body {
 
 /* ---------- top bar ---------- */
 
-/* Centred and large, the way saloon.wtf hangs its wordmark near the top of
-   the frame rather than in a corner. The height is a variable because it is
-   tuned to this painting: it drops the title into the clear band of marigold
-   wall, below the shrine picture and above the row of kids, so it covers
-   neither the deity nor the langoor's face. */
+/* Name and status sit in the corner like a shop sign, so nothing is ever
+   parked over the face the scene is about. */
 .brand {
   position: fixed;
-  top: var(--brand-y, 23%);
-  left: 50%;
-  translate: -50% -50%;
+  top: calc(var(--edge) + env(safe-area-inset-top));
+  left: var(--edge);
   z-index: 20;
-  width: calc(100% - var(--edge) * 2);
-  text-align: center;
 }
 
+/* The wordmark carries the page the way "Deluxe Saloon" carries saloon.wtf:
+   large, heavy and in the corner. Mukta is used rather than the serif because
+   Devanagari needs real weight to hold at this size against the artwork. */
 .brand-name {
   margin: 0;
   font-family: "Rozha One", Mukta, serif;
   font-weight: 400;
-  font-size: clamp(58px, 9vw, 108px);
-  line-height: 1;
+  font-size: 46px;
+  line-height: 1.05;
   letter-spacing: 0;
-  filter: drop-shadow(0 4px 18px rgba(0,0,0,0.55));
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.6));
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 12px;
+  margin-top: 7px;
+  padding: 4px 10px;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 999px;
   background: rgba(255,255,255,0.07);
@@ -125,15 +123,6 @@ body {
   letter-spacing: 0.02em;
   color: rgba(255,255,255,0.9);
   font-variant-numeric: tabular-nums;
-}
-
-/* The wordmark is centred on this page, so the status pill keeps the
-   top-left corner to itself. */
-.status {
-  position: fixed;
-  top: calc(var(--edge) + env(safe-area-inset-top));
-  left: var(--edge);
-  z-index: 20;
 }
 
 .badge-dot {
@@ -366,7 +355,7 @@ body {
 @media (max-width: 767px) {
   :root { --edge: 16px; }
 
-  .brand { --brand-y: 21%; }
+  .brand-name { font-size: 36px; }
   .pill { padding: 10px; }
   .pill-label, .pill-arrow { display: none; }
 

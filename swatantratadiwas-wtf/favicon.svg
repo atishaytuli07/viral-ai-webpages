@@ -1,0 +1,9 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tricolor: Saffron, White, Green -->
+  <rect x="8" y="16" width="48" height="4" fill="#FF9933"/>
+  <rect x="8" y="20" width="48" height="4" fill="#FFFFFF"/>
+  <rect x="8" y="24" width="48" height="4" fill="#138808"/>
+  <!-- Ashoka Chakra center -->
+  <circle cx="32" cy="22" r="2.5" fill="#000080" stroke="#000080" stroke-width="0.5"/>
+  <circle cx="32" cy="22" r="3.5" fill="none" stroke="#000080" stroke-width="0.3"/>
+</svg>

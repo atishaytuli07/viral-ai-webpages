@@ -2,8 +2,8 @@
    snark out of it on every tap cheapens the one joke it already tells. */
 
 Player.init({
-  prev: "https://maakachappal.vercel.app/",
-  next: "https://gullycricket.vercel.app/",
+  prev: "https://swatantratadiwas.vercel.app/",
+  next: "https://gullycricket-wtf.vercel.app/",
   tracks: [
     {
       videoId: "Q0UlQ_-YyjU",

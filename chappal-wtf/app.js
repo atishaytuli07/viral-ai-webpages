@@ -1,8 +1,8 @@
 /* चप्पल */
 
 Player.init({
-  prev: "https://gullycricket.vercel.app/",
-  next: "https://kanjak.vercel.app/",
+  prev: "https://gullycricket-wtf.vercel.app/",
+  next: "https://swatantratadiwas.vercel.app/",
   tracks: [
     {
       videoId: "PmdyY38g6Rg",

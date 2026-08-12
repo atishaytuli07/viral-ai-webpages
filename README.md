@@ -1,7 +1,7 @@
 # viral-ai-webpages
 
-Three single-scene web pages. Each one is a painted Indian moment, a song that
-scores it, and nothing else no scroll, no copy explaining the joke.
+Four single-scene web pages. Each one is a painted Indian moment, a song that
+scores it, and nothing else — no scroll, no copy explaining the joke.
 
 Built in the spirit of [saloon.wtf](https://saloon.wtf) and
 [roadways.wtf](https://roadways.wtf): the artwork carries the whole frame, the
@@ -9,7 +9,7 @@ UI stays out of its way.
 
 ---
 
-**Live:** [kanjak.vercel.app](https://kanjak.vercel.app) · [gullycricket-wtf.vercel.app](https://gullycricket-wtf.vercel.app) · [maakachappal.vercel.app]([https://chappal-wtf.vercel.app](https://chappal-wtf.vercel.app)
+**Live:** [kanjak.vercel.app](https://kanjak.vercel.app) · [gullycricket-wtf.vercel.app](https://gullycricket-wtf.vercel.app) · [chappal-wtf.vercel.app](https://chappal-wtf.vercel.app) · [swatantratadiwas.vercel.app](https://swatantratadiwas.vercel.app)
 
 ---
 
@@ -56,6 +56,19 @@ the joke.
 
 ---
 
+## स्वतंत्रता दिवस
+
+15 August, the neighborhood flying the flag, everyone their own Independence Day.
+
+![स्वतंत्रता दिवस](preview/swatantratadiwas.jpg)
+
+**Rang De Basanti** (A. R. Rahman · Rang De Basanti) → **Chale Chalo**
+(A. R. Rahman · Lagaan)
+
+No tap effects — it is a celebration, and letting the image speak is the gift.
+
+---
+
 ## How it works
 
 Plain HTML, CSS and JavaScript. No build step, no framework, no dependencies.
@@ -65,11 +78,11 @@ Plain HTML, CSS and JavaScript. No build step, no framework, no dependencies.
 | Audio | A hidden YouTube IFrame player. Each track lists fallback video IDs, so a pulled or embed-blocked upload silently rolls to another copy of the same song. |
 | Autoplay | There is no "tap to start" gate. The first tap anywhere is the gesture that lets the page unmute. |
 | Motion | One still per page, overscaled, drifting and swaying on deliberately non-multiple durations (41s / 29s) so the loop never reads as a metronome. |
-| Navigation | The player's ⏮ ⏭ walk between the three pages, not between tracks — they are one ring. Extra songs still get heard: a track ending advances to the next one on that page. |
-| Weight | 226–298 KB on load. Scenes are WebP at q82; social cards are JPEG, because 1 MB PNGs get silently dropped by WhatsApp. |
+| Navigation | The player's ⏮ ⏭ walk between the four pages, not between tracks — they are one ring. Extra songs still get heard: a track ending advances to the next one on that page. |
+| Weight | 229–322 KB on load. Scenes are WebP at q82; social cards are JPEG, because 1 MB PNGs get silently dropped by WhatsApp. |
 
 Each page is self-contained in its own folder — `index.html`, `styles.css`,
-`player.js` (shared, identical across all three) and `app.js` (the per-scene
+`player.js` (shared, identical across all four) and `app.js` (the per-scene
 tracks, captions and effects).
 
 ## Running locally
@@ -90,10 +103,11 @@ Create the projects with these exact names, so the free subdomain matches:
 | folder | Vercel project | URL |
 |---|---|---|
 | `kanjak-wtf` | `kanjak` | kanjak.vercel.app |
-| `gully-cricket-wtf` | `gullycricket` | gullycricket.vercel.app |
-| `chappal-wtf` | `maakachappal` | maakachappal.vercel.app |
+| `gully-cricket-wtf` | `gullycricket-wtf` | gullycricket-wtf.vercel.app |
+| `chappal-wtf` | `chappal-wtf` | chappal-wtf.vercel.app |
+| `swatantratadiwas-wtf` | `swatantratadiwas` | swatantratadiwas.vercel.app |
 
-`og:url`, `og:image`, `canonical` and the links between the three sites are
+`og:url`, `og:image`, `canonical` and the links between the four sites are
 absolute and point at those URLs. They have to be: the pages live on separate
 hosts, so a relative `../` hop would 404, and a relative `og:image` means no
 preview card on WhatsApp, Twitter or iMessage. If a URL changes, each
