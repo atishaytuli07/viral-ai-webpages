@@ -1,7 +1,7 @@
 # viral-ai-webpages
 
 Three single-scene web pages. Each one is a painted Indian moment, a song that
-scores it, and nothing else — no scroll, no copy explaining the joke.
+scores it, and nothing else no scroll, no copy explaining the joke.
 
 Built in the spirit of [saloon.wtf](https://saloon.wtf) and
 [roadways.wtf](https://roadways.wtf): the artwork carries the whole frame, the
@@ -9,7 +9,7 @@ UI stays out of its way.
 
 ---
 
-**Live:** [kanjak.vercel.app](https://kanjak.vercel.app) · [gullycricket.vercel.app](https://gullycricket.vercel.app) · [maakachappal.vercel.app](https://maakachappal.vercel.app)
+**Live:** [kanjak.vercel.app](https://kanjak.vercel.app) · [gullycricket-wtf.vercel.app](https://gullycricket-wtf.vercel.app) · [maakachappal.vercel.app]([https://chappal-wtf.vercel.app](https://chappal-wtf.vercel.app)
 
 ---
 
